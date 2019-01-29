@@ -1,0 +1,26 @@
+title: Hola, el mundo!
+description: Testing GitHub Pages start Here.
+encoding: utf-8
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-architect
+url:              https://felixmundial.github.io # Site url, without a slash at the end.
+signoff:          "felixyin" # Your name
+facebook_appid:   # APP ID for like button, remove from /_includes/share.html if unwanted.
+google_analytics: # Set tracking, remove from /javascripts/basic.js if unwanted.
+share:            true # Turn on twitter and facebook share buttons
+
+links:
+  - name:         Articles
+    url:          /
+    external:     false
+  - name:         About me
+    url:          /about
+    external:     false
+# ------------ CONFIGURABLE END ------------
+
+permalink:        /posts/:categories/:title
+# paginate: 2
+# paginate_path: "blog/page:num"
+# # Gems
+# plugins: [jekyll-paginate]
