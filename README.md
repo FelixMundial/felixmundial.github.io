@@ -1,5 +1,5 @@
 
-# Setup guide for Github Pages (as of Oct.9.2017 on Windows 10 x64)
+# Setup guide for Github Pages (as of Oct.9.2017 on Windows 10 x64/ Aug.9.2019 on Mac OS Mojave)
 blog url: https://felixmundial.github.io/
 ***
 
