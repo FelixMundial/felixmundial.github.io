@@ -1,14 +1,9 @@
 
-### Setup guide for Github Pages (as of Oct.9.2017 on Windows 10 x64)
+# Setup guide for Github Pages (as of Oct.9.2017 on Windows 10 x64)
 blog url: https://felixmundial.github.io/
 ***
-* Repository creation & submission
 
-1. "index.html"
-2. "Push origin" rather than "Publish"
-3. Additional synching work
-
-* Page setup using *Jekyll* templates 
+## Page setup using *Jekyll* templates 
 
 1. Installation of *Ruby* on Windows:
 
@@ -20,7 +15,7 @@ blog url: https://felixmundial.github.io/
 
 When in command prompt -->
 
-`...>gem install jekyll`
+`> gem install jekyll`
 
 With possible output ending with:
 
@@ -40,9 +35,7 @@ With possible output ending with:
 
 4. Installation of Jekyll presets in the target folder containing the page files
 
-`>cd C:\Users\WINDOWS_USERNAME\Documents\GitHub\GITHUB_USER NAME.github.io`
-
-`C:\Users\WINDOWS_USERNAME\Documents\GitHub\GITHUB_USER NAME.github.io>bundle install`
+`> bundle install`
 
 With possible output ending with:
 
@@ -50,9 +43,9 @@ With possible output ending with:
 
 `Use 'bundle info [gemname]' to see where a bundled gem is installed.`
 
-5. Establishing Jekyll environment enabling a serving running at http://localhost:4000/
+1. Establishing Jekyll environment enabling a serving running at http://localhost:4000/
 
-`C:\Users\WINDOWS_USERNAME\Documents\GitHub\GITHUB_USER NAME.github.io>bundle exec jekyll serve`
+`> bundle exec jekyll serve`
 
 With possible output ending with:
 
@@ -62,7 +55,7 @@ With possible output ending with:
   
 `Server running... press ctrl-c to stop.`
 
-6. Visit http://127.0.0.1:4000/ or http://localhost:4000/ to see the template layout (!!With the command prompt window open)
-7. Return to Github Desktop and when ready with your changes, "Commit to Master"" and "Push origin"
+1. Visit http://localhost:4000/ to see the template layout (!! With the command prompt window open)
+2. Return to Github Desktop and when ready with your changes, "Commit to Master"" and "Push origin"
 
 * Further page setup by making modifications on .md files
