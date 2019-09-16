@@ -6,8 +6,14 @@ set -e
 # 生成静态文件
 yarn docs:build
 
+# 将外部README_master.md复制进dist文件夹
+cp -rvf docs/.vuepress/README_master.md docs/.vuepress/dist
+
 # 进入生成的文件夹
 cd docs/.vuepress/dist
+
+# 重命名README.md
+mv README_master.md README.md
 
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
