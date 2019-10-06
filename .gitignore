@@ -77,9 +77,6 @@ typings/
 # nuxt.js build output
 .nuxt
 
-# vuepress build output
-.vuepress/dist
-
 # Serverless directories
 .serverless/
 
@@ -91,4 +88,12 @@ typings/
 
 .idea
 
+# vuepress build output
 docs/.vuepress/dist
+
+# vuepress build branch readme template
+/docs/.vuepress/README_master.md
+
+# gitalk config (obsolete)
+/docs/.vuepress/config/
+/docs/.vuepress/enhanceApp_obsolete.js

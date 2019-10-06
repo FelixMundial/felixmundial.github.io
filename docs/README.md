@@ -1,8 +1,9 @@
 ---
 home: true
+layout: SpringLayout
 heroImage: /icons/favicon.png
 heroText: Hello World
-tagline: felixmundial.github.io
+tagline: Blog powered by Vuepress...
 actionText: 进入导览 →
 actionLink: /guide/
 features:

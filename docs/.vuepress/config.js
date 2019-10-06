@@ -8,21 +8,37 @@ module.exports = {
     port: 9999,
     themeConfig: {
         nav: [
-            { text: 'Home', link: '/' },
-            { text: 'Guide', link: '/guide/' },
+            { text: '👉Guide', link: '/guide/toc.md' },
             {
-                text: 'External', link: 'https://github.com',
-                ariaLabel: 'External Menu',
+                text: 'Spring', link: 'https://spring.io',
+                ariaLabel: 'Spring',
                 items: [
-                    { text: 'First', link: '/posts/' },
+                    { text: '404', link: '/posts/' },
                     { text: 'Test', link: '/posts/test/test-post.md' }
+                ]
+            },
+            {
+                text: 'Redis', link: 'https://redis.io',
+                ariaLabel: 'Redis',
+                items: [
+                    { text: '404', link: '/posts/' },
+                    { text: 'Test', link: '/posts/test/test-post2.md' }
+                ]
+            },
+            {
+                text: 'Docker', link: 'https://docker.io',
+                ariaLabel: 'Docker',
+                items: [
+                    { text: '404', link: '/posts/' },
+                    { text: 'Test', link: '/posts/test/test-post3.md' }
                 ]
             }
         ],
-        repo: 'FelixMundial/felixmundial.github.io',
+        // repo: 'FelixMundial/felixmundial.github.io',
         sidebar: 'auto',
         sidebarDepth: 2,
         displayAllHeaders: true,
-        lastUpdated: 'Last Updated'
+        smoothScroll: true,
+        lastUpdated: '最近更新于'
     }
 }

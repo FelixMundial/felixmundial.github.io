@@ -1,9 +1,15 @@
 {
   "scripts": {
-    "docs:dev": "vuepress dev docs --cache .cache",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "vuepress dev docs --no-cache",
+    "docs:build": "vuepress build docs",
+    "docs:deploy": "bash deploy.sh"
   },
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
+    "element-ui": "^2.12.0",
     "vuepress": "^1.1.0"
+  },
+  "dependencies": {
+    "@vuepress/theme-default": "^1.0.0-rc.1"
   }
 }
