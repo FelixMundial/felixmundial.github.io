@@ -97,3 +97,8 @@ docs/.vuepress/dist
 # gitalk config (obsolete)
 /docs/.vuepress/config/
 /docs/.vuepress/enhanceApp_obsolete.js
+
+# custom fonts
+docs/.vuepress/public/fonts/8bitOperatorPlus-Regular.ttf
+
+/package-lock.json
