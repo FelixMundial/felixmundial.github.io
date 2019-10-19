@@ -2,6 +2,8 @@
   <main class="page">
     <slot name="top"/>
 
+    <PageMeta :post="currentPost"/>
+
     <Content class="theme-default-content"/>
 
     <footer class="page-edit">
@@ -57,19 +59,37 @@
       </p>
     </div>
 
+<!--    Valine starts -->
+<!--    <ClientOnly>-->
+<!--      <ValineComments/>-->
+<!--    </ClientOnly>-->
+<!--    Valine ends -->
+
     <slot name="bottom"/>
   </main>
 </template>
 
 <script>
 import { resolvePage, outboundRE, endingSlashRE } from '../util'
+// import ValineComments from '../../components/Comments'
+import PageMeta from '../../components/PostMeta'
 
 export default {
   props: ['sidebarItems'],
 
+  components: { PageMeta, /*ValineComments*/ },
+
   computed: {
+    currentPost () {
+      return this.$page
+    },
     lastUpdated () {
-      return this.$page.lastUpdated
+      if (this.$page.lastUpdated) {
+        if (this.$page.frontmatter.lastUpdated !== false) {
+          return this.$page.frontmatter.date ? this.$page.frontmatter.date.substr(0, 10) : this.$page.lastUpdated
+        }
+        return this.$page.lastUpdated
+      }
     },
 
     lastUpdatedText () {

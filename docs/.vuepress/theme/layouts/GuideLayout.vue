@@ -9,7 +9,7 @@
             </h3></blockquote>
             <el-tag v-for="item in tagsPool" class="tag-individual"
                     @click="onTagClicked(item)" effect="plain" hit="true">
-                {{ item }}
+                <i class="el-icon-paperclip"></i> {{ item }}
             </el-tag>
         </div>
     </div>

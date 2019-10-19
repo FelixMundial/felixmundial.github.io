@@ -7,7 +7,7 @@
       class="dropdown-title"
       @click="toggle"
     >
-      <span class="title">{{ item.text }}</span>
+      <span class="title" v-html="item.text">{{ item.text }}</span>
       <span
         class="arrow"
         :class="open ? 'down' : 'right'"

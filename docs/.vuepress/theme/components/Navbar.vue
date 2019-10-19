@@ -17,7 +17,7 @@
         class="site-name"
         v-if="$siteTitle"
         :class="{ 'can-hide': $site.themeConfig.logo }"
-      >{{ $siteTitle }}</span>
+      ><i class="el-icon-bicycle"></i> {{ $siteTitle }}</span>
     </router-link>
 
     <div
@@ -104,6 +104,7 @@ $navbar-background-color = azure
     padding $navbar-vertical-padding $navbar-horizontal-padding
     font-size 1.3rem
     font-weight 600
+    font-family SignPainter, "American Typewriter", sans-serif
     color $textColor
     position relative
   .links

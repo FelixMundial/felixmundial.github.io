@@ -95,10 +95,19 @@ docs/.vuepress/dist
 /docs/.vuepress/README_master.md
 
 # gitalk config (obsolete)
-/docs/.vuepress/config/
+/docs/.vuepress/config/gitalk
+# enhanceApp configs for gitalk (obsolete)
 /docs/.vuepress/enhanceApp_obsolete.js
 
-# custom fonts
-docs/.vuepress/public/fonts/8bitOperatorPlus-Regular.ttf
+## valine config (obsolete)
+#/docs/.vuepress/config/valine
 
+# global credentials
+/docs/.vuepress/config/service_config.js
+
+# custom fonts
+docs/.vuepress/public/fonts/*.ttf
+docs/.vuepress/public/fonts/*.ttc
+
+# npm json file
 /package-lock.json

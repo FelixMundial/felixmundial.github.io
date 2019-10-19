@@ -4,6 +4,7 @@
     :to="link"
     v-if="!isExternal(link)"
     :exact="exact"
+    v-html="item.text"
   >{{ item.text }}</router-link>
   <a
     v-else
