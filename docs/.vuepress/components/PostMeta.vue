@@ -67,7 +67,7 @@
     .post-header
         margin $navbarHeight + 2rem 1rem .5rem 2rem
         .post-title
-            font-family "American Typewriter", sans-serif
+            font-family American Typewriter, sans-serif
             font-weight normal
             line-height 1.4;
             font-size 2rem

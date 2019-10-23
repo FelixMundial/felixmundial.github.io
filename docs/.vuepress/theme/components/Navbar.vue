@@ -104,7 +104,7 @@ $navbar-background-color = azure
     padding $navbar-vertical-padding $navbar-horizontal-padding
     font-size 1.3rem
     font-weight 600
-    font-family SignPainter, "American Typewriter", sans-serif
+    font-family "8-bit Operator+", sans-serif
     color $textColor
     position relative
   .links

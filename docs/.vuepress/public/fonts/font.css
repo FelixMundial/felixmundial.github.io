@@ -4,3 +4,31 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: Dalelands Uncial;
+    src: url('Dalelands Uncial.otf');
+    }
+@font-face {
+    font-family: Trajan Pro;
+    src: url('TrajanPro-Regular-subfont.ttf');
+}
+@font-face {
+    font-family: American Typewriter;
+    src: url('AmericanTypewriter-subfont.ttf');
+}
+@font-face {
+    font-family: Gregorian;
+    src: url('GregorianFLF-subfont.ttf');
+}
+@font-face {
+    font-family: Herculanum;
+    src: url('Herculanum-subfont.ttf');
+}
+@font-face {
+    font-family: Herculanum Full;
+    src: url('Herculanum.ttf');
+}
+/*@font-face {*/
+/*    font-family: 'SignPainter';*/
+/*    src: url('SignPainter.ttc');*/
+/*}*/

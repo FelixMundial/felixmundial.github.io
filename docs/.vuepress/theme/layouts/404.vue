@@ -61,7 +61,7 @@ export default {
   }
   .title {
     color: red;
-    font-family: "American Typewriter",serif;
+    font-family: American Typewriter, sans-serif;
   }
   .msg {
     font-size: 120%;
