@@ -1,73 +1,66 @@
 <template>
-  <main class="home" aria-labelledby="main-title">
-    <header class="hero">
-      <img
-        v-if="data.heroImage"
-        :src="$withBase(data.heroImage)"
-        :alt="data.heroAlt || 'hero'"
-      >
+	<main class="home" aria-labelledby="main-title">
+		<header class="hero">
+			<!-- 主页文章预览-->
+			<div class="toc-main">
+				<TOC />
+			</div>
 
-      <h1 v-if="data.heroText !== null" id="main-title">{{ data.heroText || $title || 'Hello' }}</h1>
+			<img
+				class="hero-image"
+				v-if="data.heroImage"
+				:src="$withBase(data.heroImage)"
+				:alt="data.heroAlt || 'hero'"
+			/>
 
-      <p class="description">
-        {{ data.tagline || $description || 'Welcome to your VuePress site' }}
-      </p>
+			<!--      <h1 v-if="data.heroText !== null" id="main-title">{{ data.heroText || $title || 'Hello' }}</h1>-->
+			<h1 v-if="data.heroText !== null" id="main-title">{{ data.heroText || '' }}</h1>
 
-      <p
-        class="action"
-        v-if="data.actionText && data.actionLink"
-      >
-        <NavLink
-          class="action-button"
-          :item="actionLink"
-        />
-      </p>
-    </header>
+			<p class="description">
+				<!--        {{ data.tagline || $description || 'Welcome to your VuePress site' }}-->
+				{{ data.tagline || '' }}
+			</p>
 
-    <div
-      class="features"
-      v-if="data.features && data.features.length"
-    >
-      <div
-        class="feature"
-        v-for="(feature, index) in data.features"
-        :key="index"
-      >
-        <h2>{{ feature.title }}</h2>
-        <p>{{ feature.details }}</p>
-      </div>
-    </div>
+			<p class="action" v-if="data.actionText && data.actionLink">
+				<NavLink class="action-button" :item="actionLink" />
+			</p>
+		</header>
 
-    <Content class="theme-default-content custom"/>
+		<div class="features" v-if="data.features && data.features.length">
+			<div class="feature" v-for="(feature, index) in data.features" :key="index">
+				<h2>{{ feature.title }}</h2>
+				<p>{{ feature.details }}</p>
+			</div>
+		</div>
 
-    <div
-      class="footer"
-      v-if="data.footer"
-    >
-      {{ data.footer }}
-    </div>
-  </main>
+		<Content class="theme-default-content custom" />
+
+		<div class="footer" v-if="data.footer">
+			{{ data.footer }}
+		</div>
+	</main>
 </template>
 
 <script>
-import NavLink from '@theme/components/NavLink.vue'
+import NavLink from '@theme/components/NavLink.vue';
+import TOC from '../../components/TOCMain';
 
 export default {
-  components: { NavLink },
+	components: { NavLink, TOC },
 
-  computed: {
-    data () {
-      return this.$page.frontmatter
-    },
+	computed: {
+		data() {
+			return this.$page.frontmatter;
+		},
 
-    actionLink () {
-      return {
-        link: this.data.actionLink,
-        text: this.data.actionText
-      }
-    }
-  }
-}
+		actionLink() {
+			return {
+				link: this.data.actionLink,
+				text: this.data.actionText
+			};
+		}
+	}
+};
 </script>
 
 <style lang="stylus">
@@ -80,7 +73,9 @@ export default {
   display block
   .hero
     text-align center
-    img
+    .toc-main
+      margin 3rem auto 1.5rem
+    .hero-image
       max-width: 100%
       max-height 280px
       display block
@@ -133,6 +128,7 @@ export default {
     border-top 1px solid $borderColor
     text-align center
     color lighten($textColor, 25%)
+    font-family "8-bit Operator+", sans-serif
 
 @media (max-width: $MQMobile)
   .home

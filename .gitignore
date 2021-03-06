@@ -24,7 +24,7 @@ lib-cov
 coverage
 *.lcov
 
-# nyc test coverage
+# nyc spring coverage
 .nyc_output
 
 # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
@@ -106,8 +106,7 @@ docs/.vuepress/dist
 /docs/.vuepress/config/service_config.js
 
 # custom fonts
-docs/.vuepress/public/fonts/*.ttf
-docs/.vuepress/public/fonts/*.ttc
+docs/.vuepress/public/fonts/*
 
 # npm json file
 /package-lock.json
